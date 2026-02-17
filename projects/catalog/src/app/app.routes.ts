@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'catalog-list',
+    path: 'catalog',
     loadComponent: () =>
       import('./product-list/product-list.component').then(
         (m) => m.ProductListComponent,
@@ -10,7 +10,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'catalog-list',
+    redirectTo: 'catalog',
     pathMatch: 'full',
   },
 ];
